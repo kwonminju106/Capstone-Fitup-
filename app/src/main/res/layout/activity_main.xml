@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+            <!--로그인 이외의 앱 메뉴 버튼-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight = "0">
+
+                <TextView
+                    android:id="@+id/appLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="앱 이름"
+                    android:textSize="30dp" />
+
+
+        </LinearLayout>
+            <!--패션 정보 등등 보여주는 레이아웃-->
+        <!--추천탭, 패션 종류 탭 전환 버튼 레이아웃-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="오늘 이런 패션은 어때요?"
+                android:textSize="30dp"/>
+
+            <AdapterViewFlipper
+                android:id="@+id/recommendFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="293dp"
+                android:autoStart="true"
+                android:flipInterval="3000" />
+            <!--추후 사진 사이즈에 맞춰서 wrap_content로 바꾸면 될듯함-->
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/fashionButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="패션 사진 및 이름1" />
+
+                <Button
+                    android:id="@+id/fashionButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:text="패션 사진 및 이름2" />
+
+                <Button
+                    android:id="@+id/fashionButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:text="패션 사진 및 이름3" />
+
+                <Button
+                    android:id="@+id/fashionButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:text="패션 사진 및 이름4" />
+
+                <Button
+                    android:id="@+id/fashionButton5"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:text="패션 사진 및 이름5" />
+
+                <Button
+                    android:id="@+id/fashionButton6"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:text="패션 사진 및 이름6" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/homeButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="홈"/>
+            <Button
+                android:id="@+id/categoryButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="카테고리"/>
+            <Button
+                android:id="@+id/myFitButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="My Fit"/>
+
+            <Button
+                android:id="@+id/myPageButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="마이페이지"/>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

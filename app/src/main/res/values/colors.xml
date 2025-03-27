@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 기본 색상 -->
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- 추가 색상 -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="purple">#800080</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="orange">#FFA500</color>
+
+    <!-- Material Design 색상 -->
+    <color name="material_blue_600">#1a73e8</color>
+    <color name="material_green_600">#1e8e3e</color>
+    <color name="material_yellow_600">#f9ab00</color>
+    <color name="material_cyan_600">#12b5cb</color>
+    <color name="material_purple_600">#9334e6</color>
+    <color name="material_gray_600">#80868b</color>
+
+    <!-- 기타 색상 -->
+    <color name="deep_pink">#FF1493</color>
+    <color name="fuchsia">#FF00FF</color>
+    <color name="magenta">#FF00FF</color>
+    <color name="crimson">#DC143C</color>
+    <color name="gainsboro">#DCDCDC</color>
+    <color name="chocolate">#D2691E</color>
+    <color name="silver">#C0C0C0</color>
+</resources>
